@@ -96,12 +96,84 @@ let langName = "JavaScript";
 
 
 // While loop
-let i = 0;
-let evenCount = 0
-while (evenCount <= 10) {
-    if (i%2 == 0) {
-        console.log(i);
-        evenCount++;
+// let i = 0;
+// let evenCount = 0
+// while (evenCount <= 10) {
+//     if (i%2 == 0) {
+//         console.log(i);
+//         evenCount++;
+//     }
+//     i++;
+// }
+
+// Arrays
+// let a = [12, 26, '13', 54, 65]
+// a[3] = 89
+// let removedValue = a.pop()
+// console.log(removedValue, a);
+// for (let element of a) {
+//     console.log(element**2);
+// }
+
+// let newLength = a.push('65')
+// console.log(newLength, a);
+
+// console.log(a);
+
+// Functions
+
+// Funtion Defination
+// function addition(...rest) {
+//     let sum = 0
+//     for(let i = 0; i < rest.length; i++) {
+//         sum += rest[i];
+//     }
+//     return sum;
+// }
+
+//Function Expression
+// let addition = function (...rest) {
+//     let sum = 0
+//     for(let i = 0; i < rest.length; i++) {
+//         sum += rest[i];
+//     }
+//     return sum;
+// }
+
+// Arrow Functions
+let addition = (...rest) => {
+    let sum = 0
+    for(let i = 0; i < rest.length; i++) {
+        sum += rest[i];
     }
-    i++;
+    return sum;
 }
+
+// Function Call
+// let result = addition(11, 22, 33, 44, 55)  
+// console.log(result);
+
+// Map and Filter
+// let a = [9, 8, 7, 6, 5]
+// let squares = a.map((element) => {
+//     return element**2
+// })
+// console.log(squares);
+// let evens = a.filter((element) => {
+//     if (element%2 === 0) {
+//         return element
+//     }
+// })
+// console.log(evens);
+
+let students = [
+    {
+        fullName: 'Supraja',
+        gender: 'Female'
+    },
+    {
+        fullName: 'Narasimha',
+        gender: 'Male'
+    },
+]
+console.log(students);
